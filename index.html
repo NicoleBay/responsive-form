@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <main>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name"
+              >Name
+              <input
+                id="name"
+                type="text"
+                placeholder="Enter your name"
+                required
+                name="name"
+            /></label>
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email"
+              >Email
+              <input
+                id="email"
+                type="email"
+                required
+                placeholder="Enter your Email"
+                name="email"
+            /></label>
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age <span class="clue">(optional)</span
+              ><input
+                id="number"
+                type="number"
+                min="13"
+                max="120"
+                placeholder="Age"
+                name="age"
+            /></label>
+          </div>
+
+          <div class="form-group">
+            <p class="headings">Where did you hear about us?</p>
+            <select id="dropdown" required>
+              <option disabled selected value name="referrer">
+                Select an option
+              </option>
+              <option value="social media">Social media</option>
+              <option value="email-or-newsletter">Email or newsletter</option>
+              <option value="search-engine">Search engine</option>
+              <option value="word-of-mouth">Word of mouth</option>
+              <option value="podcast">Podcast</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p class="headings">Would you recommend our website to a friend?</p>
+            <label>
+              <input
+                type="radio"
+                value="definitely"
+                name="user-recommend"
+                checked
+                class="inline"
+              />
+              Definitely
+            </label>
+            <label>
+              <input
+                type="radio"
+                value="maybe"
+                name="user-recommend"
+                class="inline"
+              />
+              Maybe
+            </label>
+            <label>
+              <input
+                type="radio"
+                value="not-sure"
+                name="user-recommend"
+                class="inline"
+              />
+              Not sure
+            </label>
+          </div>
+
+          <div class="form-group">
+            <p class="headings">
+              What are you hoping to learn by visiting our website?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+            <label
+              ><input
+                type="checkbox"
+                value="front-end-projects"
+                class="inline"
+                name="want"
+              />
+              Front-end Projects</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="back-end-rojects"
+                class="inline"
+                name="want"
+              />
+              Back-end Projects</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="ai-projects"
+                class="inline"
+                name="want"
+              />
+              AI Projects</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="data-visualization"
+                class="inline"
+                name="want"
+              />
+              Data Visualisation</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="challenges"
+                class="inline"
+                name="want"
+              />
+              Challenges</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="hackathons"
+                class="inline"
+                name="want"
+              />
+              Hackathons</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="open-source-community"
+                class="inline"
+                name="want"
+              />
+              Open Source Community</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="videos"
+                class="inline"
+                name="want"
+              />
+              Videos</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="meetups"
+                class="inline"
+                name="want"
+              />
+              Meetups</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="forum"
+                class="inline"
+                name="want"
+              />
+              Forum</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="additional-courses"
+                class="inline"
+                name="want"
+              />
+              Additional Courses</label
+            >
+          </div>
+
+          <div class="form-group">
+            <p class="headings">Any comments or suggestions?</p>
+            <textarea
+              rows="3"
+              cols="50"
+              placeholder="Enter your comment here..."
+              class="comments"
+              name="comments"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" id="submit">Submit</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
