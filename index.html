@@ -53,16 +53,22 @@
 
           <div class="form-group">
             <p class="headings">Where did you hear about us?</p>
-            <select id="dropdown" required>
+            <select id="dropdown" required name="referrer">
               <option disabled selected value name="referrer">
                 Select an option
               </option>
-              <option value="social media">Social media</option>
-              <option value="email-or-newsletter">Email or newsletter</option>
-              <option value="search-engine">Search engine</option>
-              <option value="word-of-mouth">Word of mouth</option>
-              <option value="podcast">Podcast</option>
-              <option value="other">Other</option>
+              <option value="social media" name="referrer">Social media</option>
+              <option value="email-or-newsletter" name="referrer">
+                Email or newsletter
+              </option>
+              <option value="search-engine" name="referrer">
+                Search engine
+              </option>
+              <option value="word-of-mouth" name="referrer">
+                Word of mouth
+              </option>
+              <option value="podcast" name="referrer">Podcast</option>
+              <option value="other" name="referrer">Other</option>
             </select>
           </div>
 
@@ -207,8 +213,7 @@
           <div class="form-group">
             <p class="headings">Any comments or suggestions?</p>
             <textarea
-              rows="3"
-              cols="50"
+              rows="4"
               placeholder="Enter your comment here..."
               class="comments"
               name="comments"
@@ -216,7 +221,7 @@
           </div>
 
           <div class="form-group">
-            <button type="submit" id="submit">Submit</button>
+            <button type="submit" id="submit" class="button">Submit</button>
           </div>
         </form>
       </main>

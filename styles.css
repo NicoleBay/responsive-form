@@ -4,7 +4,7 @@ body {
   margin: 0;
   background-color: #1b1b32;
   color: #f5f6f7;
-  font-family: Tahoma;
+  font-family: Tahoma, sans-serif;
   font-size: 1.125rem;
 }
 
@@ -21,6 +21,7 @@ h1 {
 #description {
   max-width: 500px;
   min-width: 300px;
+  margin: 0 auto;
 }
 
 p {
@@ -82,19 +83,19 @@ label {
 
 .comments {
   font-size: 18px;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
-button {
+.button {
   display: block;
-  width: 100%;
-  margin-top: 1em;
+  width: 60%;
   height: 2em;
   font-size: 1.1rem;
   background-color: #ff6e31;
   color: #000000;
   border-radius: 10px;
   border: 1px solid #000000;
-  min-width: 300px;
 }
 
 button:hover {
@@ -103,4 +104,12 @@ button:hover {
   border: 1px solid #ffffff;
   border-color: #ffffff;
   transition: all 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 1px solid #ff6e31;
+  box-shadow: 0 0 5px #ff6e31;
 }
